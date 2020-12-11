@@ -34,7 +34,7 @@ import { notification } from 'ant-design-vue';
 import { mapActions, mapState } from 'vuex';
 import mkadArray from './mkad';
 /* CONST */
-const MAX_POINTS_CHECK = 5; // Вот так нормально заводятся константы
+const MAX_POINTS_CHECK = 5;
 export default {
   components: { yandexMap, ymapMarker },
   data() {
@@ -82,7 +82,7 @@ export default {
               size: 'small',
             },
             on: {
-              click: () => notification.close(key), // Вешай функцию на событие
+              click: () => notification.close(key),
             },
           },
           'Записать',
